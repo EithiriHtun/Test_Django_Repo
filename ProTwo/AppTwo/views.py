@@ -8,3 +8,6 @@ from django.http import HttpResponse
 def index(request):
  my_redir = {'redirect_page' : "Hello!.Testing from view for template challenge!"}
  return render(request,"index.html",context=my_redir)
+
+def test_map(request):
+    return HttpResponse("Testing for Mapping!.")
