@@ -19,6 +19,7 @@ from AppTwo import views
 from django.urls import include
 
 urlpatterns = [
+    path('user/',views.add_user,name='add_user'),
     path('',views.index,name='index'),
     path('two_app/',views.index,name='index'),
     path('test_map/',include('AppTwo.urls')),
