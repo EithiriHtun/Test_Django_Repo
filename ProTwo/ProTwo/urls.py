@@ -24,4 +24,5 @@ urlpatterns = [
     path('two_app/',views.index,name='index'),
     path('test_map/',include('AppTwo.urls')),
     path('admin/', admin.site.urls),
+    path('form_page/',views.form_user,name='form'),
 ]
